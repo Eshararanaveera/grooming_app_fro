@@ -1,3 +1,9 @@
+buildscript {
+    // Force all subprojects (e.g. image_picker_android) to use the same Kotlin
+    // version as the root project, preventing Gradle from downloading kotlin-gradle-plugin:2.3.20.
+    extra["kotlin_version"] = "2.0.21"
+}
+
 allprojects {
     repositories {
         google()
